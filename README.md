@@ -29,3 +29,5 @@ Second, run data base with prisma studio in a second terminal:
 npx prisma studio
 
 ### Deploy on Vercel
+
+[Open DK App](https://app-dk-next-js.vercel.app)

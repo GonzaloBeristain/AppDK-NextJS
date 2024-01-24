@@ -1,6 +1,6 @@
 "use client";
 import { useRouter } from "next/navigation";
-
+import Image from "next/image";
 
 export const CardCharacter = ({card}) => {
     const router = useRouter();

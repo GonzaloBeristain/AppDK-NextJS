@@ -1,9 +1,13 @@
+import { prisma } from "@/libs/prisma";
 import { Character } from "@/components/Character.jsx";
 import Link from "next/link";
 
 const getUser = async (id) => {
-    const res = await fetch(`http://localhost:3000/api/crud/${id}`);
-    const data = await res.json();
+    const data = await prisma.card.findUnique({
+        where: {
+            id: Number(id)
+        }
+    })
     return data;
 };
 

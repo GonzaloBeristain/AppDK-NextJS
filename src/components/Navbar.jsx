@@ -3,8 +3,8 @@ import Image from "next/image";
 
 export const Navbar = () => {
     return (
-        <nav className="bg-red-950 flex px-7">
-            <div className="px-7 py-1">
+        <nav className="bg-red-950 flex md:px-7">
+            <div className="hidden md:px-7 md:py-1 md:block">
                 <Image
                 src="/img/dki-nav.png"
                 width={53}
@@ -12,13 +12,14 @@ export const Navbar = () => {
                 alt="IconDK" />
             </div>
             <div className="container mx-auto flex justify-between items-center py-3 text-red-600">
-                <h3 className="font-bold text-md text-center md:text-3xl">
-                    <Link href="/">DonkeyKong App</Link>
-                </h3>
-                <audio className="bg-red-700" controls loop>
+                <Link className="md:flex md:justify-center md:items-center" href="/">
+                    <img className="md:w-40 md:h-9" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Donkeykong-logo1.svg/1200px-Donkeykong-logo1.svg.png" alt="img"/>
+                    <h1 className="font-bold text-md text-center text-red-600 border rounded border-yellow-400 md:text-3xl px-1">APP</h1>
+                </Link>
+                <audio className="bg-red-700 hidden sm:block" controls loop>
                     <source src="/audio/dk2audio.mp3" type="audio/mp3" />
                 </audio>
-                <ul className="flex gap-x-2 text-sm font-bold md:text-lg">
+                <ul className="flex pr-1 text-sm font-bold md:text-lg md:gap-x-2 md:pr-0">
                     <li className="hover:bg-red-900 rounded px-2">
                         <Link href="/">Home</Link>
                     </li>

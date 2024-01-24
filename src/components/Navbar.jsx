@@ -13,7 +13,7 @@ export const Navbar = () => {
             </div>
             <div className="container mx-auto flex justify-between items-center py-3 text-red-600">
                 <Link className="md:flex md:justify-center md:items-center" href="/">
-                    <img className="md:w-40 md:h-9" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Donkeykong-logo1.svg/1200px-Donkeykong-logo1.svg.png" alt="img"/>
+                    <Image width={300} height={300} className="md:w-40 md:h-9" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Donkeykong-logo1.svg/1200px-Donkeykong-logo1.svg.png" alt="img"/>
                     <h1 className="font-bold text-md text-center text-red-600 border rounded border-yellow-400 md:text-3xl px-1">APP</h1>
                 </Link>
                 <audio className="bg-red-700 hidden sm:block" controls loop>
